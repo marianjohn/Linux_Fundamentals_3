@@ -1,0 +1,33 @@
+#Maintaining your system : Automation
+cron process are run during boot, crontab = a module in cron
+cron executes the functions in cronetab line by line.
+crontabs requires = 
+MIN(what minute to execute), HOUR(what hour to execute), DOM(what day of the month)
+MON(what month of the year), DOW(which day of the week) and CMD(the actual command to run).
+0 *12 * * * cp -R /home/cmnatic/Documents /var/backups/ = copies files in Documents directory to backups directory every 12 hours.
+* = used when the argument is not required.
+crontab -e = to edit/add commands to the crontab file.
+@reboot /var/opt/processes.sh = crontab command that runs at reboot everytime.
+
+
+#Package Management
+/apt = when developers create programs they submit to this directory, if approved they will be used worlwide.
+add-apt-repository = to add repository
+dpkg = installers
+GPG(Gnu Privacy Guard) key = authencity from the developers key
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add - = to download the gpg of the software
+
+#
+Create sublime-text.list
+deb https://download.sublimetext.com/ apt/stable/
+apt update
+apt install sublime-text
+#
+
+add-apt-repository --remove ppa:PPA_Name/ppa = to remove the file created before.
+apt remove [software-name-here] = to remove the app.
+
+#Maintain System Logs 
+Log from Apache2 web server, fail2ban service, UFW service = great logs to monitor the  health of the system.
+Log from web server - access and error logs are very important.
+To get log files go to /var/log. If in home go back using cd ..

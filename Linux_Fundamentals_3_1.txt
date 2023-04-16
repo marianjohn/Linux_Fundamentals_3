@@ -1,0 +1,38 @@
+#Terminal Text Editors
+nano filename = To open editing in nano.
+Use Ctrl+command to navigate options on the editor.
+VIM = Vi IMproved.
+
+#General/Useful Utilities
+wget = to download files and pics from the website using HTTP.
+SCP = Secure Copy = To copy files between two machiines using SSH protocol.
+scp important.txt ubuntu@192.168.1.30:/home/ubuntu/transferred.txt = Copying important.txt from your directory to the ubuntu machine's directory.And renaming as transfered.txt.
+scp ubuntu@192.168.1.30:/home/ubuntu/documents.txt notes.txt  = Copying documents.txt from the ubuntu machine to your system's directory.And renaming it as notes.txt.
+scp source destinstion = Format of scp command.
+HTTPServer = python command can be used to turn your system as a server.
+python3 -m http.server = makes 8000 port open for file transfer.
+curl, wget = can help in downloading the file through http.
+Updog = more advanced and lightweight webserver.
+wget http://10.10.235.13:8000/.flag.txt = to download the .flag.txt file after starting the flag.
+
+#Process 101
+Process are programs running on the machine. Each program is named numerically starting from 1.
+ps = shows the list of programs that are currently running.Process from a session.
+TTY = status code, TIME = How much time the program has been running, CMD = name of the program thats running.
+ps aux = to see process run by other users and system process.
+top = realtime statistics of the process running.
+kill PID = to terminate the process.
+SIGTERM = to terminate the process cleanly.
+SIGKILL = kills the process no clean up.
+SIGSTOP = stop/suspend the process.
+namespace = set of signs used by the software to differentiate and plit processes.
+systemd = one of the first processes that are started.
+systemctl [option] [service] = To administrate services.
+[option] = Start, Stop, Enable(starts the service after the boot up of the system), Disable(stops the service after the boot up of the system).
+[service] = Service name.
+Foreground = Programs runs in the front of the terminal.
+Background = Programs runs in the background.
+We can make the process run in the background by adding & to the command.
+Ctrl + Z = To run programs on background.
+fg PID = To move a process to foreground.
+
